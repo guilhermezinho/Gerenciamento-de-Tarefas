@@ -1,0 +1,25 @@
+{
+  "rules": {
+    "usuarios": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid"
+      }
+    },
+    "tarefas": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid",
+        "$tarefaId": {
+          ".validate": "newData.hasChildren(['titulo', 'dataVencimento', 'prioridade', 'concluida'])",
+          "titulo": { ".validate": "newData.isString() && newData.val().length > 0" },
+          "descricao": { ".validate": "newData.isString()" },
+          "dataVencimento": { ".validate": "newData.isNumber()" },
+          "prioridade": { ".validate": "newData.val() === 'baixa' || newData.val() === 'media' || newData.val() === 'alta'" },
+          "concluida": { ".validate": "newData.isBoolean()" },
+          "$outro": { ".validate": false }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "824463007201",
+    "firebase_url": "https://cadastro-de-servico-default-rtdb.firebaseio.com",
+    "project_id": "cadastro-de-servico",
+    "storage_bucket": "cadastro-de-servico.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824463007201:android:b6bd534341c45f36c146a0",
+        "android_client_info": {
+          "package_name": "com.company.servico"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4c3nBXJblVdBVWW3KX3hj6P9uwCdG7fY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

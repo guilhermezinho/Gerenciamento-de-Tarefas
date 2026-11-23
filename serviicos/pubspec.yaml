@@ -1,0 +1,36 @@
+name: serviicos
+description: "Aplicativo de gerenciamento de tarefas com Flutter e Firebase."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Firebase (Authentication + Realtime Database)
+  firebase_core: ^4.2.0
+  firebase_auth: ^6.1.0
+  firebase_database: ^12.0.0
+
+  # Preferências locais (tema claro/escuro)
+  shared_preferences: ^2.5.3
+
+  # Formatação de datas
+  intl: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

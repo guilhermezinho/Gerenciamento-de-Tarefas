@@ -1,0 +1,3 @@
+Coloque aqui as capturas de tela do app (login, cadastro, home, Drawer,
+lista de tarefas, cadastro/edição de tarefa, configurações com tema escuro)
+e referencie-as no README.md.
